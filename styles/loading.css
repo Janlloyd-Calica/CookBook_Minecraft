@@ -1,17 +1,17 @@
 :root {
-    --loadingscreen-backgroud-color: #ffffff; 
+    --loadingscreen-backgroud-color: #d80000; 
     --loadingscreen-prospect-color: #cf0f0f;
 }
 
 html.dark {
     --loadingscreen-background-color: #2c2b30;
-    --loadingscreen-prospect-color: #ece5d8;
+    --loadingscreen-prospect-color: #d00000;
 }
 
 .loading-bar-container {
-    width: 1324px;
-    height: 147px;
-    background-color: #f5f5f5;
+    width: 1800px;
+    height: 100px;
+    background-color: #b70000;
     border-radius: 5px;
     overflow: hidden;
 }
