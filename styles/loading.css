@@ -8,6 +8,24 @@ html.dark {
     --loadingscreen-prospect-color: #ece5d8;
 }
 
+.loading-bar-container {
+    width: 1324px;
+    height: 147px;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.loading-bar {
+    width: 0;
+    height: 100%;
+    background-color: #ff0000;
+    animation: loading 10s infinite;
+}  
+@keyframes loading {
+    0% { width: 0; }
+    50% { width: 50%; }
+    100% { width: 100%; }
+}  
 .loading-screen {
     position: fixed;
     top: 0;
