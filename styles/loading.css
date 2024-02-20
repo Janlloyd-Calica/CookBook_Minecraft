@@ -13,12 +13,13 @@ html.dark body {
 }
 
 .loading-screen img {
-    position: absolute;
+    display: grid;
+    place-items: center;
     top: 0;
     left: 0;
     width: 50%;
     height: 50%;
-    filter: drop-shadow(0 -600px 0 var(--loadingbar-background-color)); /* Adjusted shadow */
+    filter: drop-shadow(0 -600px 0 var(--loadingscreen-background-color)); /* Adjusted shadow */
 }
 
 .loading-screen::after {
