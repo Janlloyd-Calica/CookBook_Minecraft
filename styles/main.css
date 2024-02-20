@@ -1,0 +1,112 @@
+@charset "UTF-8";
+
+*, ::before, ::after {
+	box-sizing: border-box;	margin: 0; padding: 0;
+}
+
+@font-face {
+    font-family: 'Minecraftia';
+    src: url('/font/minecraftia/Minecraftia-Regular.ttf');
+}
+
+html {
+    font: 12pt 'Minecraftia', sans-serif; 
+    }
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+    background-image: url('https://github.com/Janlloyd-Calica/CookBook_Minecraft/blob/main/img/background.jpg?raw=true');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+div.big {
+    border-style: solid;
+    border-width: 5px;
+    border-color: black;
+    color: white;
+    background: grey;
+    width: 200px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer; 
+}
+
+div.big:hover{
+    color: yellow;
+    background: #6589AC;
+}
+
+div.big {
+    margin: auto;
+    margin-left: 10%;
+    margin: 1% 10%;
+    padding: 1% 0%;
+    font-size: 150%;
+}
+
+.title {
+    margin-top: 7%;
+}
+
+.subtitle {
+    position: absolute;
+    color: yellow;
+    left: 45%;
+    top: -2%;
+    font-size: 150%;
+    transform: rotate(-20deg);
+    width: 100%;
+    animation: subtitle .25s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes subtitle {
+    0% {
+        transform: scale(0.875) rotate(-20deg);
+    }
+    100% {
+        transform: scale(1) rotate(-20deg);
+    }
+}
+
+@media screen and (max-width: 1070px) {
+    div.big {
+        border-width: 4px;
+    }
+
+    div.big {
+        margin: 1% 10%;
+        padding: 1% 0%;
+        font-size: 100%;
+    }
+
+    .subtitle {
+        font-size: 75%;
+    }  
+}
+
+@media screen and (max-width: 727px) {
+    div.big {
+        border-width: 3px;
+    }
+
+    div.big {
+        margin: 1% 10%;
+        padding: 1% 0%;
+        font-size: 75%;
+    }
+
+    .subtitle {
+        font-size: 75%;
+    }
+}
