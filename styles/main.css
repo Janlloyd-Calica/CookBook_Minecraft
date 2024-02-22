@@ -1,6 +1,7 @@
 @charset "UTF-8";
 
 *, ::before, ::after {
+    font-family: 'minecraftfont';
 	box-sizing: border-box;	margin: 0; padding: 0;
 }
 
@@ -9,7 +10,8 @@ html {
 	font-family: 'minecraftfont';
     }
 
-body {
+body {    
+    font-family: 'minecraftfont';
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -20,7 +22,6 @@ body {
     background-size: cover;
     background-position: center;
     position: relative;
-    font-family: 'minecraftfont';
 }
 
 div.big {
