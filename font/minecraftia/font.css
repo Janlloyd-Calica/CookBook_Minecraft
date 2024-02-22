@@ -1,0 +1,8 @@
+@font-face {
+	font-family: 'minecraftfont';
+	src: url('./minecraftfont.ttf') format('truetype');
+}
+
+.fontsforweb_fontid_1412 {
+	font-family: 'minecraftfont' !important;
+}

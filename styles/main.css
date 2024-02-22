@@ -5,12 +5,12 @@
 }
 
 @font-face {
-    font-family: 'Minecraftia';
-    src: url('/font/minecraftia/Minecraftia-Regular.ttf');
+    font-family: Minecraftia;
+    src: url('font/minecraftia/font.css');
 }
 
 html {
-    font: 12pt 'Minecraftia', sans-serif; 
+    font: 12pt 'minecraftfont'; 
     }
 
 body {

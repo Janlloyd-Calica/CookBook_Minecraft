@@ -1,10 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>Crafting Table</title>
-    </head>
-    <body>
-        
-    </body>
+<html>
+<head>
+	<title>Minecraft Crafting Table</title>
+
+	<meta property="og:url" content="http://willybarro.github.io/crafting-table-js/" />
+	<meta property="og:title" content="Crafting Table"/>
+	<meta property="og:description" content="Minecraft crafting table"/>
+	
+	<link rel="icon" href="img/icons/" type="image/x-icon" />
+	<link rel="shortcut icon" href="img/crafting_table_icon.png" type="image/x-icon" />
+
+	<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script src="src/draggabilly/draggabilly.pkgd.min.js"></script>
+	<script src="src/ctjs/ingredients.js"></script>
+	<script src="src/ctjs/minecraft.js"></script>
+	<script src="src/ctjs/ctjs.js"></script>
+	<script>
+		$(function() {
+			ctjs.init();
+		});
+	</script>
+	<link rel="stylesheet" href="styles/craft.css" media="all" />
+	<link rel="stylesheet" href="font/minecraftia/font.css">
+</head>
+<body>
+	<h1>Minecraft Crafting Table</h1>
+	<p>Instructions:</p>	
+	<p>Click on an ingredient from your inventory, then click on a cell of your crafting table to place this ingredient.</p>
+	<a href="https://www.minecraft-crafting.net/" target="_blank">Click for some recipes</a>
+	<div class="crafting-holder">
+		<div class="crafting clearfix">
+			<div class="recipe">
+				<h6>Crafting</h6>
+				<div id="crafting-table"></div>
+			</div>
+			<div class="arrow"></div>
+			<div id="crafting-table-output"></div>
+		</div>
+		<div class="inventory-holder clearfix">
+			<h6>Inventory</h6>
+			<div id="inventory">
+			</div>
+		</div>
+		<div class="items clearfix">
+			<form id="item-search-form">
+				<label>Item search:</label>
+				<input type="text" autocomplete="off" id="item-search-input" name="search" />
+			</form>
+
+			</div>
+			<div id="item-list"></div>
+		</div>
+	</div>
+</body>
 </html>
