@@ -4,11 +4,6 @@
 	box-sizing: border-box;	margin: 0; padding: 0;
 }
 
-@font-face {
-    font-family: 'minecraftfont';
-    src: url('font/minecraftia/font.css');
-}
-
 html {
     font-size: 12pt;
 	font-family: 'minecraftfont';
@@ -25,6 +20,7 @@ body {
     background-size: cover;
     background-position: center;
     position: relative;
+    font-family: 'minecraftfont';
 }
 
 div.big {
@@ -56,6 +52,7 @@ div.big {
 
 .title {
     margin-top: 7%;
+    font-family: 'minecraftfont';
 }
 
 .subtitle {
